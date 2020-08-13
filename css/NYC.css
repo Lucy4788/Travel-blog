@@ -1,0 +1,254 @@
+body{
+    background-color: #F4F6FF;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+li{
+    list-style: none;
+}
+
+/*navigation style*/
+
+nav{
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+
+}
+nav p{
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #127681;
+    font-family: 'Bellota', cursive;
+    font-weight: bold;
+    letter-spacing: 2px; 
+    transition: all 300ms ease-in-out;
+}
+nav p:hover{
+    background-color: #aacdbe;
+    color: black;
+    border-radius: 10px;
+}
+
+nav .menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bellota', cursive;
+    font-weight: bold;
+}
+nav .menu ul li{
+    list-style: none;
+    float: right;
+    margin: 10px;
+    padding: 10px;
+    transition: all 300ms ease-in-out;
+}
+nav .menu ul li:hover{
+    background-color: #fbd46d;
+    border-radius: 50px;
+}
+/*-----------Header style--------------*/
+
+header{
+    margin: 150px auto;
+    margin-bottom: 50px;
+    background-image: url("https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+    width: 80%;
+    height: 45em;
+    top: 70px;
+    max-width: 100%;
+}
+
+header .title{
+    position: relative;
+    top: 15em;
+}
+header .title h2{
+    padding: 1px 0;
+    color: black;
+    text-align: center;
+    font-family: 'Bellota', cursive;
+    border-top: 4px solid goldenrod;
+    border-bottom: 4px solid goldenrod;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 100px;  
+}
+header .title h1{
+    font-size: 6em;
+    font-family: 'Bellota', cursive;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.opening{
+    margin: 0 150px 50px;
+    text-align: center;
+}
+/*--------------------Grid style-----------------------*/
+.grid h2{
+   text-align: center;
+   font-size: 2em;
+   letter-spacing: 3px;
+}
+.images{
+    display: grid;
+    grid-template: repeat(2, 200px) / repeat(4, 300px);
+    grid-row-gap: 10px;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+}
+.images:hover{
+    cursor: pointer;
+}
+img{
+    border-radius: 10px;
+    transition: all 400ms ease-in-out;
+}
+img:hover{
+    opacity: 0.7;
+}
+
+/*--------------second navigation bar---------------*/
+.navigation{
+    display: inline-block;
+    width: 95%;
+    top: 10px;
+    margin-bottom: 50px;
+}
+.navigation ul li{
+    margin: 5px 15px;
+    padding: 5px 10px;
+    font-weight: light;
+    font-size: 1em;
+    float: right;
+    background-color: goldenrod;
+    border-radius: 10px;
+}
+.navigation ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*footer style*/
+
+footer{
+   background-color: white;
+   bottom: 0;
+   display: inline-block;
+   width: 100%;
+   max-width: 100%;
+}
+footer #bio{
+    background-image: url("https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 550px;
+}
+footer #bio p{
+    position: relative;
+    background-color: rgba(18, 118, 129, 0.6);
+    display: block;
+    margin: 30px 300px;
+    text-align: left;
+    top: 300px;
+    left: 280px;
+    padding: 10px 20px;
+    line-height: 1.5;
+    font-style: italic;
+    color: #f4f6ff;
+    font-family: 'Bellota', cursive;
+}
+footer p{
+   float: left;
+   padding: 10px;
+   
+}
+
+footer ul li{
+   margin: 5px;
+   width: 30px;
+   padding: 10px;
+   float: right;
+}
+footer ul li a{
+    color: black;
+    transition: all 400ms ease-in-out;
+}
+footer ul li a:hover{
+    cursor: pointer;
+    color: goldenrod;
+}
+@media only screen and (max-width: 480px){
+   nav ul li{
+       font-size: 17px;
+   }
+   header {
+       width: 90%;
+       background-position: center center;
+   }
+   header h1{
+       position: relative;
+       font-size: 1.5em;
+       left: auto;
+       top: 10em;
+   }
+   footer p{
+       font-size: 13px;
+       padding: 13px;
+   }
+   .gallery h2{
+   text-align: center;
+   font-size: 1.5em;
+   letter-spacing: 2px;
+    }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 950px) {
+    header h1{
+       position: relative;
+       font-size: 1.7em;
+       left: 1%;
+       top: 80%;
+   }
+    header{ 
+       background-position: center center;
+       }
+    nav ul li{
+       font-size: 15px;
+   }
+  
+}
+
+@media only screen and (max-width: 380px){
+    header h1{
+       position: relative;
+       font-size: 1.6em;
+       left: auto;
+       top: 50%;
+       padding: 10px 15px;
+   }
+   header{
+       background-position: center center;
+   }
+   nav ul li{
+       font-size: 15px;
+   }
+   footer p{
+       font-size: 13px;
+       padding: 20px;
+   }
+   footer ul li{
+       margin: 3px;
+   }
+}
